@@ -1,5 +1,6 @@
 package com.example.work_13_02_2024.Domain;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -14,6 +15,7 @@ public class Person {
         this.id = id;
         this.name = name;
         this.phone = phone;
+        this.pets = new ArrayList<>();
 
         String[] species = {"whippet", "rhodesian ridgeback", "irish wolfhound", "dachshund",
                 "borzoi", "bloodhound", "beagle", "basset hound"};
@@ -46,5 +48,9 @@ public class Person {
 
     public String getPhone() {
         return phone;
+    }
+
+    public List<Pet> getPets() {
+        return pets;
     }
 }
